@@ -1,0 +1,1136 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08C16CB5C454D0C44F7E4AFF /* GBPrint.h in Headers */ = {isa = PBXBuildFile; fileRef = 0966384AA6A73F2AE4590B00 /* GBPrint.h */; };
+		09195F52FD091F9366E5CE13 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = F42F1B67BCA893FBD0B3EFD4 /* writer.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		0935036BA1D5A43524B9FEBF /* GBCli.h in Headers */ = {isa = PBXBuildFile; fileRef = 8695B68040608B7E48593BD0 /* GBCli.h */; };
+		0C0F19306797826A1C768C12 /* TTTJSONTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 424C93D6DF98F7A765BBE95E /* TTTJSONTransformer.h */; };
+		10EF7D5A1AA9A8B9F4E7125D /* TTTStringTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E7E1DAC2B5F442C0A36F837 /* TTTStringTransformers.h */; };
+		111D32CAE50C21B2984EF8FE /* TTTDateTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 90FA2823748A8FB59916F8D6 /* TTTDateTransformers.h */; };
+		1995D54776330F8B57284732 /* TTTStringTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD88850F23BB8B942559194 /* TTTStringTransformers.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		28A7C1469A02A1767D1187C4 /* GBOptionsHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 005CBECA8BF3E047640772E2 /* GBOptionsHelper.h */; };
+		2A8DF71B27673F7CDB4FA64B /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = E0ACC7A51BE07A77D4D631DB /* loader.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		2DD5DF28197876C4C2417D1B /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E2109970BAE3F12042CC806 /* yaml.h */; };
+		35EFD1E44F38937C52A3C696 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 95C2E396D1B6B7F7DBE89666 /* parser.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		404F5C140D3CDC86D6325AAF /* YAMLSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E8065B9F5D591955C495776 /* YAMLSerialization.h */; };
+		487690E7CA1020AB5DFF2D2D /* TTTDateTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BCD80D2563ACAE697CDB93 /* TTTDateTransformers.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		567D28BA6187EEFE0019D0EE /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A354258657155A0C1778087 /* reader.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		62A034AFB9BB14CEC2FFB2F9 /* Pods-ColorPal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CDC3F998158636325927E7 /* Pods-ColorPal-dummy.m */; };
+		630DC1FBF4DA503D6BDA7A9B /* Pods-ColorPal-LibYAML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EF0B4E6E07F8751FEB8966 /* Pods-ColorPal-LibYAML-dummy.m */; };
+		6A36696A040598FA39C09E79 /* GBSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ECB4D2489441C1A6975F6D /* GBSettings.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		6E121DBC6BE1443D445FBC8D /* Pods-ColorPal-TransformerKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 384668E79E863C1CF10615E3 /* Pods-ColorPal-TransformerKit-dummy.m */; };
+		6EEAED268457EFF3512715E2 /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = E40611D9C12D0F7F88FA7C24 /* yaml_private.h */; };
+		71525926C8FA90DABB420AC2 /* TTTImageTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1D56034C28AA7809241415 /* TTTImageTransformers.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		75BA2699527D33CCCC635892 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A8678F6CED2FE9810A8716 /* Security.framework */; };
+		767B63D052859B7411F1B3DB /* Pods-ColorPal-GBCli-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C8518AF942262360BD68A5 /* Pods-ColorPal-GBCli-dummy.m */; };
+		7C160CD1E21CCE2BCAE2ABB8 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = DC92B1A6CDA5E1408B2336AF /* emitter.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		7C32B2E9AA6AE110C25F92F9 /* NSValueTransformer+TransformerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 227F0130941929FA636B76B6 /* NSValueTransformer+TransformerKit.h */; };
+		7CF480CD71457069179A4607 /* YAMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 896C94F161757DDFCCE07A4A /* YAMLSerialization.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		7D7985049DC33DBB8075D378 /* TTTImageTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 94FF4FD4BCC33D2B0CAEC30C /* TTTImageTransformers.h */; };
+		8A263C64E42D0CFF71165DAF /* GBCommandLineParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E9DE2E620473AD1DC38A2120 /* GBCommandLineParser.h */; };
+		8BD501F6BC07088F49D15DBA /* GBSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A4ADF4A04D466E5CF15B5E /* GBSettings.h */; };
+		A37CEC7B7D2CAB0B61831E54 /* TTTCryptographyTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D95DCD2BA250BBA7696393 /* TTTCryptographyTransformers.h */; };
+		A4D407127EFC43F3D8DB8013 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D89B86A85D008576C4D896 /* Cocoa.framework */; };
+		A5BFC007377034CBB3565C52 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 479609EEFDB098BAD51CA69A /* config.h */; };
+		A873FA047DE49D5FBD1CEFF3 /* NSValueTransformer+TransformerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D5973D788E56ACC4EF694E3F /* NSValueTransformer+TransformerKit.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		AF1FFDC2414C49FF28EB53EE /* GBOptionsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F931D6CC7A028BAA6DB033D /* GBOptionsHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		BA8965BFB23249C1BDA794E4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D89B86A85D008576C4D896 /* Cocoa.framework */; };
+		BBE1E71204A5B7827A7477E7 /* GBCommandLineParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8EEE4853DFE018A94B6C73 /* GBCommandLineParser.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		BCB01DCAE7C61A9DBC5D8824 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D89B86A85D008576C4D896 /* Cocoa.framework */; };
+		BEB8532A1F5AEB4BC10A6171 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D89B86A85D008576C4D896 /* Cocoa.framework */; };
+		C200B2DFBC8828C718A648C6 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 81E6FE5698EBC22D23F0A878 /* scanner.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		C61256E909A211D404CCC4F2 /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 232D6BE2CC36464FB1FADC18 /* api.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		DB147EF8A763F0C48C3BAECC /* TTTJSONTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF56F6847807BA07E0C4E9A /* TTTJSONTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		E442EA33197FE90C14A49DE8 /* dumper.c in Sources */ = {isa = PBXBuildFile; fileRef = 5146283EFF7413D4E395C982 /* dumper.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		E4A7969839156B76A295F9CA /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E96E16E9B6472AE2F00CA33 /* config.h */; };
+		E8C3D9FC3787799B4AB61EB2 /* Pods-ColorPal-YAML-Framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB9CD35229CB4DC4C699FEA /* Pods-ColorPal-YAML-Framework-dummy.m */; };
+		F0F658AE6191D22C99DB0E08 /* TTTCryptographyTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448BA451904A18DB723ABB6 /* TTTCryptographyTransformers.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		F1F12586CCE2479A2F45366B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D89B86A85D008576C4D896 /* Cocoa.framework */; };
+		F7147E5F2913C86B6AF1F092 /* GBPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A1744C0842874C9E18A774 /* GBPrint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AC302291B16245F95CEE8F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A1080A40D37B4AAB9C50A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B16AE553A87200C094CA6BE8;
+			remoteInfo = "Pods-ColorPal-GBCli";
+		};
+		2B28E1C987287C500AFFF106 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A1080A40D37B4AAB9C50A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B93DC545F137878FE04CE45;
+			remoteInfo = "Pods-ColorPal-LibYAML";
+		};
+		55154E56F57BFBCD287C749E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A1080A40D37B4AAB9C50A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1809B883B9556BAC2B41C21A;
+			remoteInfo = "Pods-ColorPal-TransformerKit";
+		};
+		8BBAFB39BE72C2B802EADA61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A1080A40D37B4AAB9C50A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E98C8CA32EAC766994E54BC;
+			remoteInfo = "Pods-ColorPal-YAML-Framework";
+		};
+		F105AD9D10716A8A7D2ACD05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A1080A40D37B4AAB9C50A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B93DC545F137878FE04CE45;
+			remoteInfo = "Pods-ColorPal-LibYAML";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		005CBECA8BF3E047640772E2 /* GBOptionsHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBOptionsHelper.h; path = GBCli/src/GBOptionsHelper.h; sourceTree = "<group>"; };
+		0448BA451904A18DB723ABB6 /* TTTCryptographyTransformers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTCryptographyTransformers.m; path = TransformerKit/TTTCryptographyTransformers.m; sourceTree = "<group>"; };
+		0474A5E269B62C50F418110D /* Pods-ColorPal-LibYAML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColorPal-LibYAML-prefix.pch"; sourceTree = "<group>"; };
+		08A4ADF4A04D466E5CF15B5E /* GBSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBSettings.h; path = GBCli/src/GBSettings.h; sourceTree = "<group>"; };
+		0966384AA6A73F2AE4590B00 /* GBPrint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBPrint.h; path = GBCli/src/GBPrint.h; sourceTree = "<group>"; };
+		0F733CE303F9FA08DD564D09 /* Pods-ColorPal-TransformerKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPal-TransformerKit-Private.xcconfig"; sourceTree = "<group>"; };
+		19A1744C0842874C9E18A774 /* GBPrint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBPrint.m; path = GBCli/src/GBPrint.m; sourceTree = "<group>"; };
+		1E96E16E9B6472AE2F00CA33 /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		1F1797F93DD0CCC04A7A573E /* libPods-ColorPal-GBCli.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorPal-GBCli.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		227F0130941929FA636B76B6 /* NSValueTransformer+TransformerKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+TransformerKit.h"; path = "TransformerKit/NSValueTransformer+TransformerKit.h"; sourceTree = "<group>"; };
+		232D6BE2CC36464FB1FADC18 /* api.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = api.c; path = src/api.c; sourceTree = "<group>"; };
+		365A3CBB866407B3A3339C25 /* Pods-ColorPal-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColorPal-environment.h"; sourceTree = "<group>"; };
+		384668E79E863C1CF10615E3 /* Pods-ColorPal-TransformerKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ColorPal-TransformerKit-dummy.m"; sourceTree = "<group>"; };
+		3C0BA1B20D771333B1863086 /* Pods-ColorPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPal.debug.xcconfig"; sourceTree = "<group>"; };
+		3F931D6CC7A028BAA6DB033D /* GBOptionsHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBOptionsHelper.m; path = GBCli/src/GBOptionsHelper.m; sourceTree = "<group>"; };
+		3FE0B76693E855FC7AB316AD /* libPods-ColorPal-YAML-Framework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorPal-YAML-Framework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		424C93D6DF98F7A765BBE95E /* TTTJSONTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTJSONTransformer.h; path = TransformerKit/TTTJSONTransformer.h; sourceTree = "<group>"; };
+		479609EEFDB098BAD51CA69A /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = "yaml-0.1.4/config.h"; sourceTree = "<group>"; };
+		4898183F550EB69E5A001B10 /* Pods-ColorPal-GBCli.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPal-GBCli.xcconfig"; sourceTree = "<group>"; };
+		5146283EFF7413D4E395C982 /* dumper.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = dumper.c; path = src/dumper.c; sourceTree = "<group>"; };
+		5B48EFA8BDE3E06CB729C308 /* Pods-ColorPal-GBCli-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPal-GBCli-Private.xcconfig"; sourceTree = "<group>"; };
+		5E4BECD001CB3E552897D041 /* Pods-ColorPal-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ColorPal-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5E7E1DAC2B5F442C0A36F837 /* TTTStringTransformers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTStringTransformers.h; path = TransformerKit/TTTStringTransformers.h; sourceTree = "<group>"; };
+		5FF56F6847807BA07E0C4E9A /* TTTJSONTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTJSONTransformer.m; path = TransformerKit/TTTJSONTransformer.m; sourceTree = "<group>"; };
+		6800B335613F6CF1E10F851B /* Pods-ColorPal-YAML-Framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPal-YAML-Framework.xcconfig"; sourceTree = "<group>"; };
+		69C692243CDEAA41DD3334FF /* Pods-ColorPal-GBCli-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColorPal-GBCli-prefix.pch"; sourceTree = "<group>"; };
+		6CF4521C61EF55D286FA4485 /* Pods-ColorPal-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ColorPal-acknowledgements.plist"; sourceTree = "<group>"; };
+		70ECB4D2489441C1A6975F6D /* GBSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBSettings.m; path = GBCli/src/GBSettings.m; sourceTree = "<group>"; };
+		79B5825D46409984BCE0F441 /* Pods-ColorPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPal.release.xcconfig"; sourceTree = "<group>"; };
+		7E8065B9F5D591955C495776 /* YAMLSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YAMLSerialization.h; sourceTree = "<group>"; };
+		81E6FE5698EBC22D23F0A878 /* scanner.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = scanner.c; path = src/scanner.c; sourceTree = "<group>"; };
+		8695B68040608B7E48593BD0 /* GBCli.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBCli.h; path = GBCli/src/GBCli.h; sourceTree = "<group>"; };
+		896C94F161757DDFCCE07A4A /* YAMLSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YAMLSerialization.m; sourceTree = "<group>"; };
+		8A354258657155A0C1778087 /* reader.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = reader.c; path = src/reader.c; sourceTree = "<group>"; };
+		90FA2823748A8FB59916F8D6 /* TTTDateTransformers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTDateTransformers.h; path = TransformerKit/TTTDateTransformers.h; sourceTree = "<group>"; };
+		94BCD80D2563ACAE697CDB93 /* TTTDateTransformers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTDateTransformers.m; path = TransformerKit/TTTDateTransformers.m; sourceTree = "<group>"; };
+		94FF4FD4BCC33D2B0CAEC30C /* TTTImageTransformers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTImageTransformers.h; path = TransformerKit/TTTImageTransformers.h; sourceTree = "<group>"; };
+		95A2DE0CBC6AB60DA5B29139 /* Pods-ColorPal-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ColorPal-resources.sh"; sourceTree = "<group>"; };
+		95B297BBB3D49D5D3E2A5CAA /* Pods-ColorPal-TransformerKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColorPal-TransformerKit-prefix.pch"; sourceTree = "<group>"; };
+		95C2E396D1B6B7F7DBE89666 /* parser.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = parser.c; path = src/parser.c; sourceTree = "<group>"; };
+		9AD88850F23BB8B942559194 /* TTTStringTransformers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTStringTransformers.m; path = TransformerKit/TTTStringTransformers.m; sourceTree = "<group>"; };
+		9E2109970BAE3F12042CC806 /* yaml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yaml.h; path = include/yaml.h; sourceTree = "<group>"; };
+		A3EF0B4E6E07F8751FEB8966 /* Pods-ColorPal-LibYAML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ColorPal-LibYAML-dummy.m"; sourceTree = "<group>"; };
+		A7CDC3F998158636325927E7 /* Pods-ColorPal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ColorPal-dummy.m"; sourceTree = "<group>"; };
+		A9D10BADF553A15386CE482F /* libPods-ColorPal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorPal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB9CD35229CB4DC4C699FEA /* Pods-ColorPal-YAML-Framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ColorPal-YAML-Framework-dummy.m"; sourceTree = "<group>"; };
+		AF1D56034C28AA7809241415 /* TTTImageTransformers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTImageTransformers.m; path = TransformerKit/TTTImageTransformers.m; sourceTree = "<group>"; };
+		B7C99FC3DE42B0000FE3BDD4 /* Pods-ColorPal-LibYAML-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPal-LibYAML-Private.xcconfig"; sourceTree = "<group>"; };
+		C2BCCD58C9B1D2B7E86695E8 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C9D64ED66E1DA35F47CEEB08 /* Pods-ColorPal-YAML-Framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColorPal-YAML-Framework-prefix.pch"; sourceTree = "<group>"; };
+		D5973D788E56ACC4EF694E3F /* NSValueTransformer+TransformerKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+TransformerKit.m"; path = "TransformerKit/NSValueTransformer+TransformerKit.m"; sourceTree = "<group>"; };
+		D95156BA2137698A7EB4BA01 /* Pods-ColorPal-YAML-Framework-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPal-YAML-Framework-Private.xcconfig"; sourceTree = "<group>"; };
+		DC92B1A6CDA5E1408B2336AF /* emitter.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = emitter.c; path = src/emitter.c; sourceTree = "<group>"; };
+		DE938F6EF2233E2DE4CA74AA /* libPods-ColorPal-TransformerKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorPal-TransformerKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0A8678F6CED2FE9810A8716 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		E0ACC7A51BE07A77D4D631DB /* loader.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = loader.c; path = src/loader.c; sourceTree = "<group>"; };
+		E40611D9C12D0F7F88FA7C24 /* yaml_private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yaml_private.h; path = src/yaml_private.h; sourceTree = "<group>"; };
+		E9DE2E620473AD1DC38A2120 /* GBCommandLineParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GBCommandLineParser.h; path = GBCli/src/GBCommandLineParser.h; sourceTree = "<group>"; };
+		F0D95DCD2BA250BBA7696393 /* TTTCryptographyTransformers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTCryptographyTransformers.h; path = TransformerKit/TTTCryptographyTransformers.h; sourceTree = "<group>"; };
+		F20EC8F1FB97641122D4040A /* Pods-ColorPal-LibYAML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPal-LibYAML.xcconfig"; sourceTree = "<group>"; };
+		F2C8518AF942262360BD68A5 /* Pods-ColorPal-GBCli-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ColorPal-GBCli-dummy.m"; sourceTree = "<group>"; };
+		F2D89B86A85D008576C4D896 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		F42F1B67BCA893FBD0B3EFD4 /* writer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = writer.c; path = src/writer.c; sourceTree = "<group>"; };
+		F5CF72A3C6D440CF7047815E /* libPods-ColorPal-LibYAML.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorPal-LibYAML.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8EEE4853DFE018A94B6C73 /* GBCommandLineParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GBCommandLineParser.m; path = GBCli/src/GBCommandLineParser.m; sourceTree = "<group>"; };
+		FF942A1889820F158ED09A86 /* Pods-ColorPal-TransformerKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPal-TransformerKit.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FC554039DA8D3C1CFC9A06D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D407127EFC43F3D8DB8013 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C7BD05DA9F661239EBFACD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F12586CCE2479A2F45366B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75965FA2C8E1DD7DCC892B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB8532A1F5AEB4BC10A6171 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DBC6228866A5653F7C54ECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB01DCAE7C61A9DBC5D8824 /* Cocoa.framework in Frameworks */,
+				75BA2699527D33CCCC635892 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDDC7168884ABD402903FFFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA8965BFB23249C1BDA794E4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0933E966D3B1689815DF5C70 /* TransformerKit */ = {
+			isa = PBXGroup;
+			children = (
+				39DED468AA1F618DC77485F1 /* Core */,
+				73610CDDBBBA8B2864A596F3 /* Cryptography */,
+				993585E416805FF92C763E3F /* Date */,
+				B0AA8B52FE95494BE280B67C /* Image */,
+				F0A1B3F145D0A96F21B0FD00 /* JSON */,
+				724654E85A3DFDAFBB09D620 /* String */,
+				FF4E4C44B40541EFF7D17909 /* Support Files */,
+			);
+			path = TransformerKit;
+			sourceTree = "<group>";
+		};
+		34EC88B9F0CBF1ECBDF71EDD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6800B335613F6CF1E10F851B /* Pods-ColorPal-YAML-Framework.xcconfig */,
+				D95156BA2137698A7EB4BA01 /* Pods-ColorPal-YAML-Framework-Private.xcconfig */,
+				ADB9CD35229CB4DC4C699FEA /* Pods-ColorPal-YAML-Framework-dummy.m */,
+				C9D64ED66E1DA35F47CEEB08 /* Pods-ColorPal-YAML-Framework-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ColorPal-YAML-Framework";
+			sourceTree = "<group>";
+		};
+		373506C8AF1CE05FA7375CEF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F20EC8F1FB97641122D4040A /* Pods-ColorPal-LibYAML.xcconfig */,
+				B7C99FC3DE42B0000FE3BDD4 /* Pods-ColorPal-LibYAML-Private.xcconfig */,
+				A3EF0B4E6E07F8751FEB8966 /* Pods-ColorPal-LibYAML-dummy.m */,
+				0474A5E269B62C50F418110D /* Pods-ColorPal-LibYAML-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ColorPal-LibYAML";
+			sourceTree = "<group>";
+		};
+		39DED468AA1F618DC77485F1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				227F0130941929FA636B76B6 /* NSValueTransformer+TransformerKit.h */,
+				D5973D788E56ACC4EF694E3F /* NSValueTransformer+TransformerKit.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		43F239102A22AC284DB62AC6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4898183F550EB69E5A001B10 /* Pods-ColorPal-GBCli.xcconfig */,
+				5B48EFA8BDE3E06CB729C308 /* Pods-ColorPal-GBCli-Private.xcconfig */,
+				F2C8518AF942262360BD68A5 /* Pods-ColorPal-GBCli-dummy.m */,
+				69C692243CDEAA41DD3334FF /* Pods-ColorPal-GBCli-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ColorPal-GBCli";
+			sourceTree = "<group>";
+		};
+		6AA079786240EA8A5D0296F5 /* LibYAML */ = {
+			isa = PBXGroup;
+			children = (
+				232D6BE2CC36464FB1FADC18 /* api.c */,
+				1E96E16E9B6472AE2F00CA33 /* config.h */,
+				5146283EFF7413D4E395C982 /* dumper.c */,
+				DC92B1A6CDA5E1408B2336AF /* emitter.c */,
+				E0ACC7A51BE07A77D4D631DB /* loader.c */,
+				95C2E396D1B6B7F7DBE89666 /* parser.c */,
+				8A354258657155A0C1778087 /* reader.c */,
+				81E6FE5698EBC22D23F0A878 /* scanner.c */,
+				F42F1B67BCA893FBD0B3EFD4 /* writer.c */,
+				9E2109970BAE3F12042CC806 /* yaml.h */,
+				E40611D9C12D0F7F88FA7C24 /* yaml_private.h */,
+				373506C8AF1CE05FA7375CEF /* Support Files */,
+			);
+			path = LibYAML;
+			sourceTree = "<group>";
+		};
+		724654E85A3DFDAFBB09D620 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				5E7E1DAC2B5F442C0A36F837 /* TTTStringTransformers.h */,
+				9AD88850F23BB8B942559194 /* TTTStringTransformers.m */,
+			);
+			name = String;
+			sourceTree = "<group>";
+		};
+		73610CDDBBBA8B2864A596F3 /* Cryptography */ = {
+			isa = PBXGroup;
+			children = (
+				F0D95DCD2BA250BBA7696393 /* TTTCryptographyTransformers.h */,
+				0448BA451904A18DB723ABB6 /* TTTCryptographyTransformers.m */,
+			);
+			name = Cryptography;
+			sourceTree = "<group>";
+		};
+		97A02E6006AE2ABC7DA7C02F /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				F2D89B86A85D008576C4D896 /* Cocoa.framework */,
+				E0A8678F6CED2FE9810A8716 /* Security.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		98247C5AB3C8835B5E977A7F /* Pods-ColorPal */ = {
+			isa = PBXGroup;
+			children = (
+				5E4BECD001CB3E552897D041 /* Pods-ColorPal-acknowledgements.markdown */,
+				6CF4521C61EF55D286FA4485 /* Pods-ColorPal-acknowledgements.plist */,
+				A7CDC3F998158636325927E7 /* Pods-ColorPal-dummy.m */,
+				365A3CBB866407B3A3339C25 /* Pods-ColorPal-environment.h */,
+				95A2DE0CBC6AB60DA5B29139 /* Pods-ColorPal-resources.sh */,
+				3C0BA1B20D771333B1863086 /* Pods-ColorPal.debug.xcconfig */,
+				79B5825D46409984BCE0F441 /* Pods-ColorPal.release.xcconfig */,
+			);
+			name = "Pods-ColorPal";
+			path = "Target Support Files/Pods-ColorPal";
+			sourceTree = "<group>";
+		};
+		993585E416805FF92C763E3F /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				90FA2823748A8FB59916F8D6 /* TTTDateTransformers.h */,
+				94BCD80D2563ACAE697CDB93 /* TTTDateTransformers.m */,
+			);
+			name = Date;
+			sourceTree = "<group>";
+		};
+		A194135FFA22B1CD2CFC8910 = {
+			isa = PBXGroup;
+			children = (
+				C2BCCD58C9B1D2B7E86695E8 /* Podfile */,
+				F2C59B98C300312FA08298D9 /* Frameworks */,
+				B68C65CF7D97EE4F541B58BB /* Pods */,
+				DAC4421DED27D8F1B61E71E8 /* Products */,
+				ECEB872A15482225EE0B6227 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B0AA8B52FE95494BE280B67C /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				94FF4FD4BCC33D2B0CAEC30C /* TTTImageTransformers.h */,
+				AF1D56034C28AA7809241415 /* TTTImageTransformers.m */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		B68C65CF7D97EE4F541B58BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD5F0A077CA420E73B4CE427 /* GBCli */,
+				6AA079786240EA8A5D0296F5 /* LibYAML */,
+				0933E966D3B1689815DF5C70 /* TransformerKit */,
+				DEF8CBC8523A4F9A8EFD2C18 /* YAML-Framework */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD5F0A077CA420E73B4CE427 /* GBCli */ = {
+			isa = PBXGroup;
+			children = (
+				8695B68040608B7E48593BD0 /* GBCli.h */,
+				E9DE2E620473AD1DC38A2120 /* GBCommandLineParser.h */,
+				FF8EEE4853DFE018A94B6C73 /* GBCommandLineParser.m */,
+				005CBECA8BF3E047640772E2 /* GBOptionsHelper.h */,
+				3F931D6CC7A028BAA6DB033D /* GBOptionsHelper.m */,
+				0966384AA6A73F2AE4590B00 /* GBPrint.h */,
+				19A1744C0842874C9E18A774 /* GBPrint.m */,
+				08A4ADF4A04D466E5CF15B5E /* GBSettings.h */,
+				70ECB4D2489441C1A6975F6D /* GBSettings.m */,
+				43F239102A22AC284DB62AC6 /* Support Files */,
+			);
+			path = GBCli;
+			sourceTree = "<group>";
+		};
+		DAC4421DED27D8F1B61E71E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9D10BADF553A15386CE482F /* libPods-ColorPal.a */,
+				1F1797F93DD0CCC04A7A573E /* libPods-ColorPal-GBCli.a */,
+				F5CF72A3C6D440CF7047815E /* libPods-ColorPal-LibYAML.a */,
+				DE938F6EF2233E2DE4CA74AA /* libPods-ColorPal-TransformerKit.a */,
+				3FE0B76693E855FC7AB316AD /* libPods-ColorPal-YAML-Framework.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEF8CBC8523A4F9A8EFD2C18 /* YAML-Framework */ = {
+			isa = PBXGroup;
+			children = (
+				7E8065B9F5D591955C495776 /* YAMLSerialization.h */,
+				896C94F161757DDFCCE07A4A /* YAMLSerialization.m */,
+				479609EEFDB098BAD51CA69A /* config.h */,
+				34EC88B9F0CBF1ECBDF71EDD /* Support Files */,
+			);
+			path = "YAML-Framework";
+			sourceTree = "<group>";
+		};
+		ECEB872A15482225EE0B6227 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				98247C5AB3C8835B5E977A7F /* Pods-ColorPal */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F0A1B3F145D0A96F21B0FD00 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				424C93D6DF98F7A765BBE95E /* TTTJSONTransformer.h */,
+				5FF56F6847807BA07E0C4E9A /* TTTJSONTransformer.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		F2C59B98C300312FA08298D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97A02E6006AE2ABC7DA7C02F /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF4E4C44B40541EFF7D17909 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF942A1889820F158ED09A86 /* Pods-ColorPal-TransformerKit.xcconfig */,
+				0F733CE303F9FA08DD564D09 /* Pods-ColorPal-TransformerKit-Private.xcconfig */,
+				384668E79E863C1CF10615E3 /* Pods-ColorPal-TransformerKit-dummy.m */,
+				95B297BBB3D49D5D3E2A5CAA /* Pods-ColorPal-TransformerKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ColorPal-TransformerKit";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BC553C803D91CE069FC866B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404F5C140D3CDC86D6325AAF /* YAMLSerialization.h in Headers */,
+				A5BFC007377034CBB3565C52 /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3D6A29EAD5BE6EAAEF3484 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4A7969839156B76A295F9CA /* config.h in Headers */,
+				2DD5DF28197876C4C2417D1B /* yaml.h in Headers */,
+				6EEAED268457EFF3512715E2 /* yaml_private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50F4D06AC7DAB2CC51FC14C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0935036BA1D5A43524B9FEBF /* GBCli.h in Headers */,
+				8A263C64E42D0CFF71165DAF /* GBCommandLineParser.h in Headers */,
+				28A7C1469A02A1767D1187C4 /* GBOptionsHelper.h in Headers */,
+				08C16CB5C454D0C44F7E4AFF /* GBPrint.h in Headers */,
+				8BD501F6BC07088F49D15DBA /* GBSettings.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC1E53017853C3E935324509 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C32B2E9AA6AE110C25F92F9 /* NSValueTransformer+TransformerKit.h in Headers */,
+				A37CEC7B7D2CAB0B61831E54 /* TTTCryptographyTransformers.h in Headers */,
+				111D32CAE50C21B2984EF8FE /* TTTDateTransformers.h in Headers */,
+				7D7985049DC33DBB8075D378 /* TTTImageTransformers.h in Headers */,
+				0C0F19306797826A1C768C12 /* TTTJSONTransformer.h in Headers */,
+				10EF7D5A1AA9A8B9F4E7125D /* TTTStringTransformers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1809B883B9556BAC2B41C21A /* Pods-ColorPal-TransformerKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72A1CDF3DFF0EF24E707EEF8 /* Build configuration list for PBXNativeTarget "Pods-ColorPal-TransformerKit" */;
+			buildPhases = (
+				E7C605A515583246F7793A60 /* Sources */,
+				8DBC6228866A5653F7C54ECF /* Frameworks */,
+				EC1E53017853C3E935324509 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ColorPal-TransformerKit";
+			productName = "Pods-ColorPal-TransformerKit";
+			productReference = DE938F6EF2233E2DE4CA74AA /* libPods-ColorPal-TransformerKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5D6691387C00EB369CEA61EA /* Pods-ColorPal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 314B6E9008E4565E97E45B85 /* Build configuration list for PBXNativeTarget "Pods-ColorPal" */;
+			buildPhases = (
+				00C1D7312C39F29C23F38357 /* Sources */,
+				4B75965FA2C8E1DD7DCC892B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B001568EC8D4C68B3248075 /* PBXTargetDependency */,
+				C312F71BCDD3FA748106A5F0 /* PBXTargetDependency */,
+				0067E6BBAB2571AE9A6912F5 /* PBXTargetDependency */,
+				77B3F99C990EF957DD09FD97 /* PBXTargetDependency */,
+			);
+			name = "Pods-ColorPal";
+			productName = "Pods-ColorPal";
+			productReference = A9D10BADF553A15386CE482F /* libPods-ColorPal.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6E98C8CA32EAC766994E54BC /* Pods-ColorPal-YAML-Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F02DB20E7D3BCA39EC57DD0 /* Build configuration list for PBXNativeTarget "Pods-ColorPal-YAML-Framework" */;
+			buildPhases = (
+				79659DF335BACF5970CC95BD /* Sources */,
+				1C7BD05DA9F661239EBFACD9 /* Frameworks */,
+				1BC553C803D91CE069FC866B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97E1FD5A028134C37E00693D /* PBXTargetDependency */,
+			);
+			name = "Pods-ColorPal-YAML-Framework";
+			productName = "Pods-ColorPal-YAML-Framework";
+			productReference = 3FE0B76693E855FC7AB316AD /* libPods-ColorPal-YAML-Framework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8B93DC545F137878FE04CE45 /* Pods-ColorPal-LibYAML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFF94A34263D22565892B693 /* Build configuration list for PBXNativeTarget "Pods-ColorPal-LibYAML" */;
+			buildPhases = (
+				1D520AB8339845AA63368E59 /* Sources */,
+				0FC554039DA8D3C1CFC9A06D /* Frameworks */,
+				CE3D6A29EAD5BE6EAAEF3484 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ColorPal-LibYAML";
+			productName = "Pods-ColorPal-LibYAML";
+			productReference = F5CF72A3C6D440CF7047815E /* libPods-ColorPal-LibYAML.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B16AE553A87200C094CA6BE8 /* Pods-ColorPal-GBCli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1D62B4CF7479A003AFA44B /* Build configuration list for PBXNativeTarget "Pods-ColorPal-GBCli" */;
+			buildPhases = (
+				556B2339F12F8D009A27D32E /* Sources */,
+				DDDC7168884ABD402903FFFF /* Frameworks */,
+				E50F4D06AC7DAB2CC51FC14C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ColorPal-GBCli";
+			productName = "Pods-ColorPal-GBCli";
+			productReference = 1F1797F93DD0CCC04A7A573E /* libPods-ColorPal-GBCli.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69A1080A40D37B4AAB9C50A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = F1C4257F52756DE51DFE23CB /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A194135FFA22B1CD2CFC8910;
+			productRefGroup = DAC4421DED27D8F1B61E71E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D6691387C00EB369CEA61EA /* Pods-ColorPal */,
+				B16AE553A87200C094CA6BE8 /* Pods-ColorPal-GBCli */,
+				8B93DC545F137878FE04CE45 /* Pods-ColorPal-LibYAML */,
+				1809B883B9556BAC2B41C21A /* Pods-ColorPal-TransformerKit */,
+				6E98C8CA32EAC766994E54BC /* Pods-ColorPal-YAML-Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00C1D7312C39F29C23F38357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A034AFB9BB14CEC2FFB2F9 /* Pods-ColorPal-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D520AB8339845AA63368E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630DC1FBF4DA503D6BDA7A9B /* Pods-ColorPal-LibYAML-dummy.m in Sources */,
+				C61256E909A211D404CCC4F2 /* api.c in Sources */,
+				E442EA33197FE90C14A49DE8 /* dumper.c in Sources */,
+				7C160CD1E21CCE2BCAE2ABB8 /* emitter.c in Sources */,
+				2A8DF71B27673F7CDB4FA64B /* loader.c in Sources */,
+				35EFD1E44F38937C52A3C696 /* parser.c in Sources */,
+				567D28BA6187EEFE0019D0EE /* reader.c in Sources */,
+				C200B2DFBC8828C718A648C6 /* scanner.c in Sources */,
+				09195F52FD091F9366E5CE13 /* writer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556B2339F12F8D009A27D32E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE1E71204A5B7827A7477E7 /* GBCommandLineParser.m in Sources */,
+				AF1FFDC2414C49FF28EB53EE /* GBOptionsHelper.m in Sources */,
+				F7147E5F2913C86B6AF1F092 /* GBPrint.m in Sources */,
+				6A36696A040598FA39C09E79 /* GBSettings.m in Sources */,
+				767B63D052859B7411F1B3DB /* Pods-ColorPal-GBCli-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79659DF335BACF5970CC95BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C3D9FC3787799B4AB61EB2 /* Pods-ColorPal-YAML-Framework-dummy.m in Sources */,
+				7CF480CD71457069179A4607 /* YAMLSerialization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7C605A515583246F7793A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A873FA047DE49D5FBD1CEFF3 /* NSValueTransformer+TransformerKit.m in Sources */,
+				6E121DBC6BE1443D445FBC8D /* Pods-ColorPal-TransformerKit-dummy.m in Sources */,
+				F0F658AE6191D22C99DB0E08 /* TTTCryptographyTransformers.m in Sources */,
+				487690E7CA1020AB5DFF2D2D /* TTTDateTransformers.m in Sources */,
+				71525926C8FA90DABB420AC2 /* TTTImageTransformers.m in Sources */,
+				DB147EF8A763F0C48C3BAECC /* TTTJSONTransformer.m in Sources */,
+				1995D54776330F8B57284732 /* TTTStringTransformers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0067E6BBAB2571AE9A6912F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ColorPal-TransformerKit";
+			target = 1809B883B9556BAC2B41C21A /* Pods-ColorPal-TransformerKit */;
+			targetProxy = 55154E56F57BFBCD287C749E /* PBXContainerItemProxy */;
+		};
+		77B3F99C990EF957DD09FD97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ColorPal-YAML-Framework";
+			target = 6E98C8CA32EAC766994E54BC /* Pods-ColorPal-YAML-Framework */;
+			targetProxy = 8BBAFB39BE72C2B802EADA61 /* PBXContainerItemProxy */;
+		};
+		8B001568EC8D4C68B3248075 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ColorPal-GBCli";
+			target = B16AE553A87200C094CA6BE8 /* Pods-ColorPal-GBCli */;
+			targetProxy = 1AC302291B16245F95CEE8F7 /* PBXContainerItemProxy */;
+		};
+		97E1FD5A028134C37E00693D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ColorPal-LibYAML";
+			target = 8B93DC545F137878FE04CE45 /* Pods-ColorPal-LibYAML */;
+			targetProxy = F105AD9D10716A8A7D2ACD05 /* PBXContainerItemProxy */;
+		};
+		C312F71BCDD3FA748106A5F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ColorPal-LibYAML";
+			target = 8B93DC545F137878FE04CE45 /* Pods-ColorPal-LibYAML */;
+			targetProxy = 2B28E1C987287C500AFFF106 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08BD1D1CBBFB6A4B7BF082DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79B5825D46409984BCE0F441 /* Pods-ColorPal.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0DC80F69D234293882A8D7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F733CE303F9FA08DD564D09 /* Pods-ColorPal-TransformerKit-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ColorPal-TransformerKit/Pods-ColorPal-TransformerKit-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		320BF38930508139D091AB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B48EFA8BDE3E06CB729C308 /* Pods-ColorPal-GBCli-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ColorPal-GBCli/Pods-ColorPal-GBCli-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		367D98720335F0607911A0AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B48EFA8BDE3E06CB729C308 /* Pods-ColorPal-GBCli-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ColorPal-GBCli/Pods-ColorPal-GBCli-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6255CC1F804926E24A2A00F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D95156BA2137698A7EB4BA01 /* Pods-ColorPal-YAML-Framework-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ColorPal-YAML-Framework/Pods-ColorPal-YAML-Framework-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6B3134DD935EA9E409A24138 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7C99FC3DE42B0000FE3BDD4 /* Pods-ColorPal-LibYAML-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ColorPal-LibYAML/Pods-ColorPal-LibYAML-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		91EA4AD4590BD71756935F52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C0BA1B20D771333B1863086 /* Pods-ColorPal.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AA18475344842F4433AC2A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F733CE303F9FA08DD564D09 /* Pods-ColorPal-TransformerKit-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ColorPal-TransformerKit/Pods-ColorPal-TransformerKit-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BD62083F1EBA2750C9EA942C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C070C5506FCEE57614414121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		D3180D3C379AEB7FF980862A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7C99FC3DE42B0000FE3BDD4 /* Pods-ColorPal-LibYAML-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ColorPal-LibYAML/Pods-ColorPal-LibYAML-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D5AF382B0F25F23D4A40985C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D95156BA2137698A7EB4BA01 /* Pods-ColorPal-YAML-Framework-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ColorPal-YAML-Framework/Pods-ColorPal-YAML-Framework-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B1D62B4CF7479A003AFA44B /* Build configuration list for PBXNativeTarget "Pods-ColorPal-GBCli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				367D98720335F0607911A0AE /* Debug */,
+				320BF38930508139D091AB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		314B6E9008E4565E97E45B85 /* Build configuration list for PBXNativeTarget "Pods-ColorPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91EA4AD4590BD71756935F52 /* Debug */,
+				08BD1D1CBBFB6A4B7BF082DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F02DB20E7D3BCA39EC57DD0 /* Build configuration list for PBXNativeTarget "Pods-ColorPal-YAML-Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6255CC1F804926E24A2A00F7 /* Debug */,
+				D5AF382B0F25F23D4A40985C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72A1CDF3DFF0EF24E707EEF8 /* Build configuration list for PBXNativeTarget "Pods-ColorPal-TransformerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DC80F69D234293882A8D7FB /* Debug */,
+				AA18475344842F4433AC2A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFF94A34263D22565892B693 /* Build configuration list for PBXNativeTarget "Pods-ColorPal-LibYAML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3180D3C379AEB7FF980862A /* Debug */,
+				6B3134DD935EA9E409A24138 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1C4257F52756DE51DFE23CB /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C070C5506FCEE57614414121 /* Debug */,
+				BD62083F1EBA2750C9EA942C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69A1080A40D37B4AAB9C50A1 /* Project object */;
+}

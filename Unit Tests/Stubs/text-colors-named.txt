@@ -1,0 +1,4 @@
+myColors
+myRed		#FF0000
+myBlue		#00FF00
+myGreen		#0000FF

@@ -1,0 +1,5 @@
+BasedOnStyle: WebKit
+Language: Cpp
+AlignTrailingComments: true
+PointerBindsToType: false
+MaxEmptyLinesToKeep: 2
