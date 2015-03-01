@@ -10,8 +10,6 @@
 		461F27F81A8F223600A96DC0 /* ColorTransfomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 461F27F71A8F223600A96DC0 /* ColorTransfomer.m */; };
 		461F27FA1A8F2F2F00A96DC0 /* NSColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 461F27F91A8F2F2F00A96DC0 /* NSColorTests.m */; };
 		461F28091A8F323A00A96DC0 /* UIColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 461F28081A8F323A00A96DC0 /* UIColorTests.m */; };
-		461F280E1A90561A00A96DC0 /* HexColorTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 461F280D1A90561A00A96DC0 /* HexColorTransformer.m */; };
-		461F280F1A90561A00A96DC0 /* HexColorTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 461F280D1A90561A00A96DC0 /* HexColorTransformer.m */; };
 		467786AA1A7F7F5B003F396B /* ColorPalApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 467786A91A7F7F5B003F396B /* ColorPalApplication.m */; };
 		4686E0801A73A21B00C823CF /* OptionsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686E07F1A73A21B00C823CF /* OptionsHelper.m */; };
 		4686E0831A73A4E700C823CF /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686E0821A73A4E700C823CF /* Settings.m */; };
@@ -32,6 +30,10 @@
 		4689FE811A7F5F9500B07836 /* NSColorList_ColorPalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4689FE801A7F5F9500B07836 /* NSColorList_ColorPalTests.m */; };
 		46B7F1FA1A929AB20086E7A7 /* text-colors-named.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46B7F1F81A929AB20086E7A7 /* text-colors-named.txt */; };
 		46B7F1FB1A929AB20086E7A7 /* text-colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46B7F1F91A929AB20086E7A7 /* text-colors.txt */; };
+		46DC82B21AA2D75F00DF5B4C /* NSColorList+YAML.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DC82B11AA2D75F00DF5B4C /* NSColorList+YAML.m */; };
+		46DC82B51AA2D9DE00DF5B4C /* yaml-colors-named.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 46DC82B31AA2D9DE00DF5B4C /* yaml-colors-named.yaml */; };
+		46DC82B61AA2D9DE00DF5B4C /* yaml-colors.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 46DC82B41AA2D9DE00DF5B4C /* yaml-colors.yaml */; };
+		46DC82B71AA2DAE500DF5B4C /* NSColorList+YAML.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DC82B11AA2D75F00DF5B4C /* NSColorList+YAML.m */; };
 		46EBC1E51A73920A002C50DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EBC1E41A73920A002C50DB /* main.m */; };
 		DE5647AB4F73E8690539085A /* libPods-ColorPal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 623BE3ED848C2358526A97EF /* libPods-ColorPal.a */; };
 /* End PBXBuildFile section */
@@ -67,8 +69,6 @@
 		461F27FF1A8F321300A96DC0 /* iOS Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		461F28021A8F321300A96DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		461F28081A8F323A00A96DC0 /* UIColorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorTests.m; sourceTree = "<group>"; };
-		461F280C1A90561A00A96DC0 /* HexColorTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColorTransformer.h; sourceTree = "<group>"; };
-		461F280D1A90561A00A96DC0 /* HexColorTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColorTransformer.m; sourceTree = "<group>"; };
 		467786A81A7F7F5B003F396B /* ColorPalApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPalApplication.h; sourceTree = "<group>"; };
 		467786A91A7F7F5B003F396B /* ColorPalApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPalApplication.m; sourceTree = "<group>"; };
 		4686E07E1A73A21B00C823CF /* OptionsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsHelper.h; sourceTree = "<group>"; };
@@ -92,6 +92,10 @@
 		4689FE801A7F5F9500B07836 /* NSColorList_ColorPalTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSColorList_ColorPalTests.m; sourceTree = "<group>"; };
 		46B7F1F81A929AB20086E7A7 /* text-colors-named.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "text-colors-named.txt"; sourceTree = "<group>"; };
 		46B7F1F91A929AB20086E7A7 /* text-colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "text-colors.txt"; sourceTree = "<group>"; };
+		46DC82B01AA2D75F00DF5B4C /* NSColorList+YAML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColorList+YAML.h"; sourceTree = "<group>"; };
+		46DC82B11AA2D75F00DF5B4C /* NSColorList+YAML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColorList+YAML.m"; sourceTree = "<group>"; };
+		46DC82B31AA2D9DE00DF5B4C /* yaml-colors-named.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "yaml-colors-named.yaml"; sourceTree = "<group>"; };
+		46DC82B41AA2D9DE00DF5B4C /* yaml-colors.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "yaml-colors.yaml"; sourceTree = "<group>"; };
 		46EBC1E11A73920A002C50DB /* ColorPal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ColorPal; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EBC1E41A73920A002C50DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		623BE3ED848C2358526A97EF /* libPods-ColorPal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorPal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,15 +152,6 @@
 			path = Modes;
 			sourceTree = "<group>";
 		};
-		461F280B1A90544100A96DC0 /* Transformers */ = {
-			isa = PBXGroup;
-			children = (
-				461F280C1A90561A00A96DC0 /* HexColorTransformer.h */,
-				461F280D1A90561A00A96DC0 /* HexColorTransformer.m */,
-			);
-			path = Transformers;
-			sourceTree = "<group>";
-		};
 		4686E0791A739C9800C823CF /* color */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +164,8 @@
 				4686E0A51A74B73C00C823CF /* ColorExporter.h */,
 				461F27F61A8F223600A96DC0 /* ColorTransfomer.h */,
 				461F27F71A8F223600A96DC0 /* ColorTransfomer.m */,
+				46DC82B01AA2D75F00DF5B4C /* NSColorList+YAML.h */,
+				46DC82B11AA2D75F00DF5B4C /* NSColorList+YAML.m */,
 			);
 			path = color;
 			sourceTree = "<group>";
@@ -207,6 +204,8 @@
 		4689FE771A7F5D8B00B07836 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				46DC82B31AA2D9DE00DF5B4C /* yaml-colors-named.yaml */,
+				46DC82B41AA2D9DE00DF5B4C /* yaml-colors.yaml */,
 				46B7F1F81A929AB20086E7A7 /* text-colors-named.txt */,
 				46B7F1F91A929AB20086E7A7 /* text-colors.txt */,
 				4689FE781A7F5EBE00B07836 /* json-colors-named.json */,
@@ -243,7 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				461F280A1A90544100A96DC0 /* Modes */,
-				461F280B1A90544100A96DC0 /* Transformers */,
 				4686E0791A739C9800C823CF /* color */,
 				4686E07A1A739C9800C823CF /* cli */,
 				46EBC1E41A73920A002C50DB /* main.m */,
@@ -379,7 +377,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B7F1FA1A929AB20086E7A7 /* text-colors-named.txt in Resources */,
+				46DC82B51AA2D9DE00DF5B4C /* yaml-colors-named.yaml in Resources */,
 				4689FE7D1A7F5ED500B07836 /* plist-colors.plist in Resources */,
+				46DC82B61AA2D9DE00DF5B4C /* yaml-colors.yaml in Resources */,
 				4689FE7A1A7F5EBE00B07836 /* json-colors-named.json in Resources */,
 				4689FE7B1A7F5EBE00B07836 /* json-colors.json in Resources */,
 				4689FE7F1A7F5F2500B07836 /* plist-colors-named.plist in Resources */,
@@ -436,7 +436,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4689FE811A7F5F9500B07836 /* NSColorList_ColorPalTests.m in Sources */,
-				461F280F1A90561A00A96DC0 /* HexColorTransformer.m in Sources */,
 				4686E09F1A74AAB900C823CF /* NSColor+ColorPal.m in Sources */,
 				4686E0A21A74AAC400C823CF /* OptionsHelper.m in Sources */,
 				4686E0A31A74AAC600C823CF /* Settings.m in Sources */,
@@ -444,6 +443,7 @@
 				4686E0A11A74AAC100C823CF /* ColorBinaryExporter.m in Sources */,
 				4686E09B1A74A61000C823CF /* NSColor_ColorPalTests.m in Sources */,
 				4686E0A01A74AABE00C823CF /* NSColorList+ColorPal.m in Sources */,
+				46DC82B71AA2DAE500DF5B4C /* NSColorList+YAML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +452,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4686E0801A73A21B00C823CF /* OptionsHelper.m in Sources */,
-				461F280E1A90561A00A96DC0 /* HexColorTransformer.m in Sources */,
 				4686E0861A74A17300C823CF /* ColorBinaryExporter.m in Sources */,
 				4686E08C1A74A20A00C823CF /* NSColor+ColorPal.m in Sources */,
 				467786AA1A7F7F5B003F396B /* ColorPalApplication.m in Sources */,
@@ -460,6 +459,7 @@
 				46EBC1E51A73920A002C50DB /* main.m in Sources */,
 				4686E0891A74A1F800C823CF /* NSColorList+ColorPal.m in Sources */,
 				4686E0831A73A4E700C823CF /* Settings.m in Sources */,
+				46DC82B21AA2D75F00DF5B4C /* NSColorList+YAML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

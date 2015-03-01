@@ -80,6 +80,17 @@ static NSString *PathForResourceInTestBundle(NSString *filename)
     XCTAssertNotNil([colors colorWithKey:@"myRed"]);
 }
 
+- (void)testYAMLLoading
+{
+    NSString *path = PathForResourceInTestBundle(@"yaml-colors.yaml");
+    NSColorList *colors = [NSColorList colorListFromYAML:path];
+
+    XCTAssertNotNil(colors);
+    XCTAssertNotNil([colors colorWithKey:@"myRed"]);
+}
+
+#pragma mark -
+
 - (void)testLoadingStandardLists
 {
     NSColorList *colors = [NSColorList colorListNamed:@"Apple"];

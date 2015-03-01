@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "NSColorList+YAML.h"
 
 @interface NSColorList (ColorPal)
 

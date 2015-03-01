@@ -1,6 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GBCli" "${PODS_ROOT}/Headers/Public/LibYAML" "${PODS_ROOT}/Headers/Public/TransformerKit" "${PODS_ROOT}/Headers/Public/YAML-Framework"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GBCli" -isystem "${PODS_ROOT}/Headers/Public/LibYAML" -isystem "${PODS_ROOT}/Headers/Public/TransformerKit" -isystem "${PODS_ROOT}/Headers/Public/YAML-Framework" -DHAVE_CONFIG_H
-OTHER_LDFLAGS = -ObjC -l"Pods-ColorPal-GBCli" -l"Pods-ColorPal-LibYAML" -l"Pods-ColorPal-TransformerKit" -l"Pods-ColorPal-YAML-Framework" -framework "Security"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GBCli" "${PODS_ROOT}/Headers/Public/LibYAML" "${PODS_ROOT}/Headers/Public/YAML-Framework"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GBCli" -isystem "${PODS_ROOT}/Headers/Public/LibYAML" -isystem "${PODS_ROOT}/Headers/Public/YAML-Framework" -DHAVE_CONFIG_H
+OTHER_LDFLAGS = -ObjC -l"Pods-ColorPal-GBCli" -l"Pods-ColorPal-LibYAML" -l"Pods-ColorPal-YAML-Framework"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods
