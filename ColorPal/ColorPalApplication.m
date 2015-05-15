@@ -10,7 +10,6 @@
 #import "Settings.h"
 #import <GBCli/GBCli.h>
 #import "NSColorList+ColorPal.h"
-#import "ColorBinaryExporter.h"
 
 
 @interface ColorPalApplication ()
@@ -69,20 +68,10 @@
         }
     }
 
-
-    ColorBinaryExporter *exporter = [[ColorBinaryExporter alloc] initWithColorList:colorList];
-
-    if (outputFile) {
-        BOOL wrote = [exporter writeToFile:outputFile];
-        if (!wrote) {
-            //error
-        }
-    }
-    else {
-        BOOL wrote = [exporter writeToColorListsDirectory];
-        if (!wrote) {
-            //error
-        }
+    // nil file writes to user's private colorlists directory
+    BOOL wrote = [colorList writeToFile:outputFile];
+    if (!wrote) {
+        //error
     }
 
     return YES;

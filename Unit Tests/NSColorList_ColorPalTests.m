@@ -113,16 +113,46 @@ static NSString *PathForResourceInTestBundle(NSString *filename)
     XCTAssertEqualObjects(appleRed, myRed);
 }
 
-- (void)testSavedFileLoadsWithMatchingColors
+- (void)testExportFromJSON
 {
     NSString *name = NSStringFromSelector(_cmd);
     NSString *fileName = [name stringByAppendingPathExtension:@"clr"];
     NSString *tempDir = NSTemporaryDirectory();
     NSString *path = [tempDir stringByAppendingPathComponent:fileName];
 
-    //    NSColorList *colors = [[NSColorList alloc] initWithName:name fromFile:path];
-    //
-    //    NSColor *redColor = [colors setColor:[NSColor redColor] forKey:@"testColor"];
+    NSString *JSONPath = PathForResourceInTestBundle(@"json-colors.json");
+
+    NSColorList *colors = [NSColorList colorListFromJSON:JSONPath];
+    [colors writeToFile:path];
+
+    NSLog(@"Wrote temporary file: %@", path);
+
+    NSColorList *result = [[NSColorList alloc] initWithName:nil fromFile:path];
+    XCTAssertTrue([result isKindOfClass:[NSColorList class]]);
+}
+
+- (void)testSavedFileLoadsWithMatchingColors
+{
+    NSString *path = ({
+        NSString *name = NSStringFromSelector(_cmd);
+        NSString *fileName = [name stringByAppendingPathExtension:@"clr"];
+        NSString *tempDir = NSTemporaryDirectory();
+        NSString *path = [tempDir stringByAppendingPathComponent:fileName];
+        path;
+    });
+
+    // load stubs
+    NSColorList *expectedColors = ({
+        NSString *path = PathForResourceInTestBundle(@"json-colors.json");
+        [NSColorList colorListFromJSON:path];
+    });
+    [expectedColors writeToFile:path];
+
+    NSColorList *actualColors = ({
+        [[NSColorList alloc] initWithName:nil fromFile:path];
+    });
+
+    XCTAssertEqualObjects([expectedColors colorWithKey:@"myRed"], [actualColors colorWithKey:@"myRed"]);
 }
 
 @end

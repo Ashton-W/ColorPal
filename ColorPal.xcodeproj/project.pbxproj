@@ -13,13 +13,11 @@
 		467786AA1A7F7F5B003F396B /* ColorPalApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 467786A91A7F7F5B003F396B /* ColorPalApplication.m */; };
 		4686E0801A73A21B00C823CF /* OptionsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686E07F1A73A21B00C823CF /* OptionsHelper.m */; };
 		4686E0831A73A4E700C823CF /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686E0821A73A4E700C823CF /* Settings.m */; };
-		4686E0861A74A17300C823CF /* ColorBinaryExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686E0851A74A17300C823CF /* ColorBinaryExporter.m */; };
 		4686E0891A74A1F800C823CF /* NSColorList+ColorPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686E0881A74A1F800C823CF /* NSColorList+ColorPal.m */; };
 		4686E08C1A74A20A00C823CF /* NSColor+ColorPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686E08B1A74A20A00C823CF /* NSColor+ColorPal.m */; };
 		4686E09B1A74A61000C823CF /* NSColor_ColorPalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686E09A1A74A61000C823CF /* NSColor_ColorPalTests.m */; };
 		4686E09F1A74AAB900C823CF /* NSColor+ColorPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686E08B1A74A20A00C823CF /* NSColor+ColorPal.m */; };
 		4686E0A01A74AABE00C823CF /* NSColorList+ColorPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686E0881A74A1F800C823CF /* NSColorList+ColorPal.m */; };
-		4686E0A11A74AAC100C823CF /* ColorBinaryExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686E0851A74A17300C823CF /* ColorBinaryExporter.m */; };
 		4686E0A21A74AAC400C823CF /* OptionsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686E07F1A73A21B00C823CF /* OptionsHelper.m */; };
 		4686E0A31A74AAC600C823CF /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686E0821A73A4E700C823CF /* Settings.m */; };
 		4686E0A41A74AB2100C823CF /* libPods-ColorPal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 623BE3ED848C2358526A97EF /* libPods-ColorPal.a */; };
@@ -34,6 +32,8 @@
 		46DC82B51AA2D9DE00DF5B4C /* yaml-colors-named.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 46DC82B31AA2D9DE00DF5B4C /* yaml-colors-named.yaml */; };
 		46DC82B61AA2D9DE00DF5B4C /* yaml-colors.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 46DC82B41AA2D9DE00DF5B4C /* yaml-colors.yaml */; };
 		46DC82B71AA2DAE500DF5B4C /* NSColorList+YAML.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DC82B11AA2D75F00DF5B4C /* NSColorList+YAML.m */; };
+		46DC82BA1AA2DC6200DF5B4C /* ColorPalReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DC82B91AA2DC6200DF5B4C /* ColorPalReader.m */; };
+		46DC82BD1AA2DC6F00DF5B4C /* ColorPalWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DC82BC1AA2DC6F00DF5B4C /* ColorPalWriter.m */; };
 		46EBC1E51A73920A002C50DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EBC1E41A73920A002C50DB /* main.m */; };
 		DE5647AB4F73E8690539085A /* libPods-ColorPal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 623BE3ED848C2358526A97EF /* libPods-ColorPal.a */; };
 /* End PBXBuildFile section */
@@ -75,8 +75,6 @@
 		4686E07F1A73A21B00C823CF /* OptionsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsHelper.m; sourceTree = "<group>"; };
 		4686E0811A73A4E700C823CF /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		4686E0821A73A4E700C823CF /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
-		4686E0841A74A17300C823CF /* ColorBinaryExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorBinaryExporter.h; sourceTree = "<group>"; };
-		4686E0851A74A17300C823CF /* ColorBinaryExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorBinaryExporter.m; sourceTree = "<group>"; };
 		4686E0871A74A1F800C823CF /* NSColorList+ColorPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColorList+ColorPal.h"; sourceTree = "<group>"; };
 		4686E0881A74A1F800C823CF /* NSColorList+ColorPal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColorList+ColorPal.m"; sourceTree = "<group>"; };
 		4686E08A1A74A20A00C823CF /* NSColor+ColorPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+ColorPal.h"; sourceTree = "<group>"; };
@@ -96,6 +94,10 @@
 		46DC82B11AA2D75F00DF5B4C /* NSColorList+YAML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColorList+YAML.m"; sourceTree = "<group>"; };
 		46DC82B31AA2D9DE00DF5B4C /* yaml-colors-named.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "yaml-colors-named.yaml"; sourceTree = "<group>"; };
 		46DC82B41AA2D9DE00DF5B4C /* yaml-colors.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "yaml-colors.yaml"; sourceTree = "<group>"; };
+		46DC82B81AA2DC6200DF5B4C /* ColorPalReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPalReader.h; sourceTree = "<group>"; };
+		46DC82B91AA2DC6200DF5B4C /* ColorPalReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPalReader.m; sourceTree = "<group>"; };
+		46DC82BB1AA2DC6F00DF5B4C /* ColorPalWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPalWriter.h; sourceTree = "<group>"; };
+		46DC82BC1AA2DC6F00DF5B4C /* ColorPalWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPalWriter.m; sourceTree = "<group>"; };
 		46EBC1E11A73920A002C50DB /* ColorPal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ColorPal; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EBC1E41A73920A002C50DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		623BE3ED848C2358526A97EF /* libPods-ColorPal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorPal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +150,10 @@
 		461F280A1A90544100A96DC0 /* Modes */ = {
 			isa = PBXGroup;
 			children = (
+				46DC82B81AA2DC6200DF5B4C /* ColorPalReader.h */,
+				46DC82B91AA2DC6200DF5B4C /* ColorPalReader.m */,
+				46DC82BB1AA2DC6F00DF5B4C /* ColorPalWriter.h */,
+				46DC82BC1AA2DC6F00DF5B4C /* ColorPalWriter.m */,
 			);
 			path = Modes;
 			sourceTree = "<group>";
@@ -155,8 +161,6 @@
 		4686E0791A739C9800C823CF /* color */ = {
 			isa = PBXGroup;
 			children = (
-				4686E0841A74A17300C823CF /* ColorBinaryExporter.h */,
-				4686E0851A74A17300C823CF /* ColorBinaryExporter.m */,
 				4686E0871A74A1F800C823CF /* NSColorList+ColorPal.h */,
 				4686E0881A74A1F800C823CF /* NSColorList+ColorPal.m */,
 				4686E08A1A74A20A00C823CF /* NSColor+ColorPal.h */,
@@ -440,7 +444,6 @@
 				4686E0A21A74AAC400C823CF /* OptionsHelper.m in Sources */,
 				4686E0A31A74AAC600C823CF /* Settings.m in Sources */,
 				461F27FA1A8F2F2F00A96DC0 /* NSColorTests.m in Sources */,
-				4686E0A11A74AAC100C823CF /* ColorBinaryExporter.m in Sources */,
 				4686E09B1A74A61000C823CF /* NSColor_ColorPalTests.m in Sources */,
 				4686E0A01A74AABE00C823CF /* NSColorList+ColorPal.m in Sources */,
 				46DC82B71AA2DAE500DF5B4C /* NSColorList+YAML.m in Sources */,
@@ -451,13 +454,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46DC82BA1AA2DC6200DF5B4C /* ColorPalReader.m in Sources */,
 				4686E0801A73A21B00C823CF /* OptionsHelper.m in Sources */,
-				4686E0861A74A17300C823CF /* ColorBinaryExporter.m in Sources */,
 				4686E08C1A74A20A00C823CF /* NSColor+ColorPal.m in Sources */,
 				467786AA1A7F7F5B003F396B /* ColorPalApplication.m in Sources */,
 				461F27F81A8F223600A96DC0 /* ColorTransfomer.m in Sources */,
 				46EBC1E51A73920A002C50DB /* main.m in Sources */,
 				4686E0891A74A1F800C823CF /* NSColorList+ColorPal.m in Sources */,
+				46DC82BD1AA2DC6F00DF5B4C /* ColorPalWriter.m in Sources */,
 				4686E0831A73A4E700C823CF /* Settings.m in Sources */,
 				46DC82B21AA2D75F00DF5B4C /* NSColorList+YAML.m in Sources */,
 			);

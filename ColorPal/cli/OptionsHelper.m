@@ -27,6 +27,8 @@
     [self registerOption:'v' long:@"verbose" description:@"Verbose output" flags:GBOptionNoValue];
     [self registerOption:'?' long:@"help" description:@"Display this help and exit" flags:GBOptionNoValue];
 
+    [self registerOption:0 long:@"version" description:@"Display version and exit" flags:GBOptionNoValue];
+
     return self;
 }
 

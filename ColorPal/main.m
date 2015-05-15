@@ -29,6 +29,10 @@ int main(int argc, char **argv)
             [options printHelp];
             return 0;
         }
+        else if ([parser valueForOption:@"version"]) {
+            [options printVersion];
+            return 0;
+        }
 
         ColorPalApplication *app = [[ColorPalApplication alloc] initWithCommandLineParser:parser];
         app.settings = settings;

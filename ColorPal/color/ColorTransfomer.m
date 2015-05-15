@@ -7,7 +7,6 @@
 //
 
 #import "ColorTransfomer.h"
-#import <TransformerKit/NSValueTransformer+TransformerKit.h>
 #import "NSColor+ColorPal.h"
 
 
